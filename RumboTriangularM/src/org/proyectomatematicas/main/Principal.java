@@ -15,6 +15,9 @@ import javafx.stage.Stage;
 import org.proyectomatematicas.controller.AnguloController;
 import org.proyectomatematicas.controller.BinarioController;
 import org.proyectomatematicas.controller.HexadecimalController;
+import org.proyectomatematicas.controller.LadoAController;
+import org.proyectomatematicas.controller.LadoBController;
+import org.proyectomatematicas.controller.LadoCController;
 import org.proyectomatematicas.controller.LeyCosenoController;
 import org.proyectomatematicas.controller.LeySenoController;
 import org.proyectomatematicas.controller.LongitudABController;
@@ -113,6 +116,33 @@ public class Principal extends Application {
         try {
             LeySenoController seno = (LeySenoController)cambiarEscena("LeySenoView.fxml",600,320);
             seno.setEscenarioPrincipal(this);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+    
+    public void ventanaLadoA() {
+        try {
+            LadoAController ladoA = (LadoAController)cambiarEscena("LadoAView.fxml",600,400);
+            ladoA.setEscenarioPrincipal(this);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+    
+    public void ventanaLadoB() {
+        try {
+            LadoBController ladoB = (LadoBController)cambiarEscena("LadoBView.fxml",600,400);
+            ladoB.setEscenarioPrincipal(this);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+    
+    public void ventanaLadoC() {
+        try {
+            LadoCController ladoC = (LadoCController)cambiarEscena("LadoCView.fxml",600,400);
+            ladoC.setEscenarioPrincipal(this);
         } catch (Exception e) {
             e.printStackTrace();
         }

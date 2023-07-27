@@ -10,40 +10,37 @@ import javafx.scene.control.TextField;
 import javax.swing.JOptionPane;
 import org.proyectomatematicas.main.Principal;
 
-public class AnguloController implements Initializable {
+public class LadoAController implements Initializable {
     private Principal escenarioPrincipal;
-
-    @FXML private TextField txtAB;
-    @FXML private TextField txtCD;
-    @FXML private Label lblRespuesta;
+    
     @FXML private Button btnCalcular;
     @FXML private Button btnCalcularOtro;
-    
+    @FXML private TextField txtC;
+    @FXML private TextField txtB;
+    @FXML private Label lblRespuesta;
+
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        limpiarControles();
-        lblRespuesta.setVisible(false);
     }
-
-    public void calcular() {
-        if (txtAB.getText().isEmpty() || txtCD.getText().isEmpty()) {
+    
+    public void calcular(){
+        if (txtC.getText().isEmpty() || txtB.getText().isEmpty()) {
             JOptionPane.showMessageDialog(null, "Campos vacios");
             limpiarControles();
         } else {
-            double AB = Double.parseDouble(txtAB.getText().trim());
-            double CD = Double.parseDouble(txtCD.getText().trim());
-            if (AB < CD) {
-                JOptionPane.showMessageDialog(null, "El segmento AB no puede ser menor que AC");
+            double c = Double.parseDouble(txtC.getText().trim());
+            double b = Double.parseDouble(txtB.getText().trim());
+            if (c < b) {
+                JOptionPane.showMessageDialog(null, "Lado 'c' no puede ser menor que lado 'b'");
                 limpiarControles();
             } else {
-                AB = 0;
-                CD = 0;
-                AB = Double.parseDouble(txtAB.getText().trim());
-                CD = Double.parseDouble(txtCD.getText().trim());
-                double res = AB - CD;
-                double resultado = res/2;
+                c = 0;
+                b = 0;
+                c = Double.parseDouble(txtC.getText().trim());
+                b = Double.parseDouble(txtB.getText().trim());
+                double resultado = Math.sqrt(Math.pow(c, 2) - Math.pow(b, 2));
                 lblRespuesta.setVisible(true);
-                lblRespuesta.setText("El ángulo θ mide: " + resultado);
+                lblRespuesta.setText("El valor de a es: " + resultado);
                 desactivarControles();
                 btnCalcular.setDisable(true);
             }
@@ -58,20 +55,18 @@ public class AnguloController implements Initializable {
     }
     
     public void limpiarControles() {
-        txtAB.clear();
-        txtCD.clear();
+        txtC.clear();
+        txtB.clear();
     }
-    
     public void desactivarControles() {
-        txtAB.setEditable(false);
-        txtCD.setEditable(false);
+        txtC.setEditable(false);
+        txtB.setEditable(false);
     }
-    
     public void activarControles() {
-        txtAB.setEditable(true);
-        txtCD.setEditable(true);
+        txtC.setEditable(true);
+        txtB.setEditable(true);
     }
-    
+
     public Principal getEscenarioPrincipal() {
         return escenarioPrincipal;
     }
@@ -79,8 +74,8 @@ public class AnguloController implements Initializable {
     public void setEscenarioPrincipal(Principal escenarioPrincipal) {
         this.escenarioPrincipal = escenarioPrincipal;
     }
-
+    
     public void menuPrincipal() {
         escenarioPrincipal.menuPrincipal();
-    }    
+    }
 }

@@ -51,4 +51,16 @@ public class MenuPrincipalController implements Initializable {
     public void ventanaSeno() {
         escenarioPrincipal.ventanaSeno();
     }
+    
+    public void ventanaLadoA() {
+        escenarioPrincipal.ventanaLadoA();
+    }
+    
+    public void ventanaLadoB() {
+        escenarioPrincipal.ventanaLadoB();
+    }
+    
+    public void ventanaLadoC() {
+        escenarioPrincipal.ventanaLadoC();
+    }
 }

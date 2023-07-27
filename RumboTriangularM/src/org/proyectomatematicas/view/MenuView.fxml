@@ -89,17 +89,17 @@
          <children>
             <VBox prefHeight="98.0" prefWidth="183.0">
                <children>
-                  <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="183.0" stylesheets="@../resource/Style.css" text="Hipotenusa" textFill="#111111">
+                  <Button mnemonicParsing="false" onAction="#ventanaLadoC" prefHeight="30.0" prefWidth="183.0" stylesheets="@../resource/Style.css" text="Hipotenusa" textFill="#111111">
                      <font>
                         <Font name="Georgia" size="12.0" />
                      </font>
                   </Button>
-                  <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="183.0" stylesheets="@../resource/Style.css" text="Cateto Opuesto" textFill="#111111">
+                  <Button mnemonicParsing="false" onAction="#ventanaLadoA" prefHeight="30.0" prefWidth="183.0" stylesheets="@../resource/Style.css" text="Cateto &quot;a&quot;" textFill="#111111">
                      <font>
                         <Font name="Georgia" size="12.0" />
                      </font>
                   </Button>
-                  <Button mnemonicParsing="false" prefHeight="34.0" prefWidth="183.0" stylesheets="@../resource/Style.css" text="Cateto Adyacente" textFill="#111111">
+                  <Button mnemonicParsing="false" onAction="#ventanaLadoB" prefHeight="34.0" prefWidth="183.0" stylesheets="@../resource/Style.css" text="Cateto &quot;b&quot;" textFill="#111111">
                      <font>
                         <Font name="Georgia" size="12.0" />
                      </font>
