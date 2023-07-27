@@ -8,47 +8,80 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="320.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.proyectomatematicas.controller.LeyCosenoController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="320.0" prefWidth="660.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.proyectomatematicas.controller.LeyCosenoController">
    <children>
-      <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="299.0" prefWidth="580.0" style="-fx-background-color: blue;">
+      <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="299.0" prefWidth="640.0" style="-fx-background-color: blue;">
          <children>
-            <ImageView fitHeight="208.0" fitWidth="282.0" layoutX="14.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="208.0" fitWidth="282.0" layoutX="14.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../image/leyCoseno.png" />
                </image>
             </ImageView>
-            <Label layoutX="302.0" layoutY="69.0" text="Calcule el valor &quot;z&quot; " textFill="WHITE">
+            <Label layoutX="302.0" layoutY="62.0" text="Calcule el valor &quot;z&quot; " textFill="WHITE">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>
             </Label>
-            <Label layoutX="302.0" layoutY="97.0" prefHeight="27.0" prefWidth="74.0" text="Si x =" textFill="WHITE">
+            <Label layoutX="302.0" layoutY="90.0" prefHeight="27.0" prefWidth="74.0" text="Si x =" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>
             </Label>
-            <Label layoutX="303.0" layoutY="129.0" text="Si y =" textFill="WHITE">
+            <Label layoutX="303.0" layoutY="122.0" text="Si y =" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>
             </Label>
-            <TextField fx:id="txtX" layoutX="384.0" layoutY="97.0" prefHeight="25.0" prefWidth="116.0" />
-            <TextField fx:id="txtY" layoutX="384.0" layoutY="130.0" prefHeight="25.0" prefWidth="116.0" />
+            <TextField fx:id="txtX" layoutX="384.0" layoutY="90.0" prefHeight="25.0" prefWidth="116.0" />
+            <TextField fx:id="txtY" layoutX="384.0" layoutY="123.0" prefHeight="25.0" prefWidth="116.0" />
             <Label fx:id="lblRespuesta" layoutX="303.0" layoutY="192.0" text="El valor de z es: " textFill="WHITE" visible="false">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>
             </Label>
-            <Button fx:id="btnCalcular" layoutX="302.0" layoutY="222.0" mnemonicParsing="false" onAction="#calcular" text="Calcular" />
-            <Button fx:id="btnCalcularOtro" layoutX="442.0" layoutY="222.0" mnemonicParsing="false" onAction="#calcularOtro" text="Volver a calcular otro" />
-            <Button layoutX="14.0" layoutY="10.0" mnemonicParsing="false" onAction="#menuPrincipal" text="Regresar" />
-            <Label layoutX="304.0" layoutY="162.0" text="Si α =" textFill="WHITE">
+            <Label layoutX="304.0" layoutY="155.0" text="Si α =" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>
             </Label>
-            <TextField fx:id="txtA" layoutX="385.0" layoutY="163.0" prefHeight="25.0" prefWidth="116.0" />
+            <TextField fx:id="txtA" layoutX="385.0" layoutY="156.0" prefHeight="25.0" prefWidth="116.0" />
          </children>
       </AnchorPane>
+      <Button fx:id="btnCalcular" alignment="BOTTOM_LEFT" layoutX="312.0" layoutY="229.0" mnemonicParsing="false" onAction="#calcular" prefHeight="58.0" prefWidth="129.0" style="-fx-background-color: white;" text="Calcular">
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/signo-matematico-igual.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnCalcularOtro" alignment="BOTTOM_LEFT" layoutX="452.0" layoutY="229.0" mnemonicParsing="false" onAction="#calcularOtro" style="-fx-background-color: white;" text="Volver a calcular otro">
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/intercambiar.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button alignment="BOTTOM_LEFT" layoutX="24.0" layoutY="18.0" mnemonicParsing="false" onAction="#menuPrincipal" style="-fx-background-color: white;" text="Regresar">
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/atras.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>

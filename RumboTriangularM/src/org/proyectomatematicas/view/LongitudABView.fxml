@@ -8,40 +8,70 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="320.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.proyectomatematicas.controller.LongitudABController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="320.0" prefWidth="660.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.proyectomatematicas.controller.LongitudABController">
    <children>
-      <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="299.0" prefWidth="580.0" style="-fx-background-color: blue;">
+      <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="299.0" prefWidth="640.0" style="-fx-background-color: blue;">
          <children>
-            <ImageView fitHeight="208.0" fitWidth="282.0" layoutX="14.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="194.0" fitWidth="282.0" layoutX="11.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../image/longitudAB.png" />
                </image>
             </ImageView>
-            <Label layoutX="302.0" layoutY="69.0" text="Calcule la longitud del arco AB" textFill="WHITE">
+            <Label layoutX="302.0" layoutY="86.0" text="Calcule la longitud del arco AB" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>
             </Label>
-            <Label layoutX="302.0" layoutY="96.0" prefHeight="27.0" prefWidth="74.0" text="Si θ    =" textFill="WHITE">
+            <Label layoutX="303.0" layoutY="119.0" prefHeight="27.0" prefWidth="74.0" text="Si θ    =" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>
             </Label>
-            <Label layoutX="303.0" layoutY="129.0" text="Si AC =" textFill="WHITE">
+            <Label layoutX="304.0" layoutY="152.0" text="Si AC =" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>
             </Label>
-            <TextField fx:id="txtAngulo" layoutX="384.0" layoutY="97.0" prefHeight="25.0" prefWidth="116.0" />
-            <TextField fx:id="txtAC" layoutX="384.0" layoutY="130.0" prefHeight="25.0" prefWidth="116.0" />
+            <TextField fx:id="txtAngulo" layoutX="385.0" layoutY="120.0" prefHeight="25.0" prefWidth="116.0" />
+            <TextField fx:id="txtAC" layoutX="385.0" layoutY="153.0" prefHeight="25.0" prefWidth="116.0" />
             <Label fx:id="lblRespuesta" layoutX="303.0" layoutY="186.0" text="La longitud del arco AC mide: " textFill="WHITE" visible="false">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>
             </Label>
-            <Button fx:id="btnCalcular" layoutX="302.0" layoutY="222.0" mnemonicParsing="false" onAction="#calcular" text="Calcular" />
-            <Button fx:id="btnCalcularOtro" layoutX="442.0" layoutY="222.0" mnemonicParsing="false" onAction="#calcularOtro" text="Volver a calcular otro" />
-            <Button layoutX="14.0" layoutY="10.0" mnemonicParsing="false" onAction="#menuPrincipal" text="Regresar" />
+            <Button fx:id="btnCalcular" layoutX="302.0" layoutY="222.0" mnemonicParsing="false" onAction="#calcular" prefHeight="58.0" prefWidth="120.0" style="-fx-background-color: white;" text="Calcular">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/signo-matematico-igual.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <Button fx:id="btnCalcularOtro" layoutX="435.0" layoutY="222.0" mnemonicParsing="false" onAction="#calcularOtro" prefHeight="58.0" prefWidth="198.0" style="-fx-background-color: white;" text="Volver a calcular otro">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/intercambiar.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <Button layoutX="14.0" layoutY="10.0" mnemonicParsing="false" onAction="#menuPrincipal" style="-fx-background-color: white;" text="Regresar">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/atras.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
          </children>
       </AnchorPane>
    </children>

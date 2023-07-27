@@ -1,30 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.String?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="333.0" prefWidth="323.0" style="-fx-background-color: #01295F;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.proyectomatematicas.controller.BinarioController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="420.0" prefWidth="400.0" style="-fx-background-color: #01295F;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.proyectomatematicas.controller.BinarioController">
    <children>
-      <AnchorPane prefHeight="61.0" prefWidth="323.0" style="-fx-background-color: #011363; -fx-background-radius: 0 0 30 30;">
+      <AnchorPane prefHeight="61.0" prefWidth="400.0" style="-fx-background-color: #011363; -fx-background-radius: 0 0 30 30;">
          <children>
-            <Label layoutX="124.0" layoutY="16.0" text="Binario" textFill="#bcbbbb">
+            <Label layoutX="163.0" layoutY="16.0" text="Binario" textFill="#bcbbbb">
                <font>
                   <Font name="Berlin Sans FB" size="25.0" />
                </font>
             </Label>
          </children>
       </AnchorPane>
-      <GridPane layoutX="14.0" layoutY="102.0" prefHeight="107.0" prefWidth="296.0">
+      <GridPane layoutX="14.0" layoutY="102.0" prefHeight="108.0" prefWidth="370.0">
         <columnConstraints>
-          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="180.0" minWidth="10.0" prefWidth="125.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="245.0" minWidth="10.0" prefWidth="245.0" />
         </columnConstraints>
         <rowConstraints>
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
@@ -46,32 +47,41 @@
             <TextField fx:id="txtNumeroBinario" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="2" />
          </children>
       </GridPane>
-      <Button fx:id="btnConvertir" layoutX="14.0" layoutY="246.0" mnemonicParsing="false" onAction="#convertirNumero" prefHeight="29.0" prefWidth="129.0" stylesheets="@../resource/Style.css" text="Convertir">
+      <Button fx:id="btnConvertir" alignment="BOTTOM_LEFT" layoutX="14.0" layoutY="246.0" mnemonicParsing="false" onAction="#convertirNumero" prefHeight="60.0" prefWidth="160.0" style="-fx-background-color: white;" stylesheets="@../resource/Style.css" text="   Convertir">
          <font>
             <Font name="Berlin Sans FB" size="14.0" />
          </font>
-         <styleClass>
-            <String fx:value="sidebarItemMo" />
-            <String fx:value="button1" />
-         </styleClass>
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/convertir.png" />
+               </image>
+            </ImageView>
+         </graphic>
       </Button>
-      <Button layoutX="14.0" layoutY="290.0" mnemonicParsing="false" onAction="#menuPrincipal" prefHeight="29.0" prefWidth="129.0" stylesheets="@../resource/Style.css" text="Regresar">
+      <Button alignment="BOTTOM_LEFT" layoutX="98.0" layoutY="340.0" mnemonicParsing="false" onAction="#menuPrincipal" prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: white;" stylesheets="@../resource/Style.css" text="     Regresar">
          <font>
             <Font name="Berlin Sans FB" size="14.0" />
          </font>
-         <styleClass>
-            <String fx:value="sidebarItemMo" />
-            <String fx:value="button1" />
-         </styleClass>
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/atras.png" />
+               </image>
+            </ImageView>
+         </graphic>
       </Button>
-      <Button fx:id="btnConvertirOtro" layoutX="155.0" layoutY="246.0" mnemonicParsing="false" onAction="#convertirOtroNumero" prefHeight="29.0" prefWidth="154.0" stylesheets="@../resource/Style.css" text="Convertir otro numero">
+      <Button fx:id="btnConvertirOtro" alignment="BOTTOM_LEFT" layoutX="192.0" layoutY="246.0" mnemonicParsing="false" onAction="#convertirOtroNumero" prefHeight="60.0" prefWidth="206.0" style="-fx-background-color: white;" stylesheets="@../resource/Style.css" text="Convertir otro numero">
          <font>
             <Font name="Berlin Sans FB" size="14.0" />
          </font>
-         <styleClass>
-            <String fx:value="sidebarItemMo" />
-            <String fx:value="button1" />
-         </styleClass>
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/intercambiar.png" />
+               </image>
+            </ImageView>
+         </graphic>
       </Button>
    </children>
 </AnchorPane>
