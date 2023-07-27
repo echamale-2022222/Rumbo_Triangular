@@ -34,7 +34,7 @@
             </Label>
             <TextField fx:id="txtA" layoutX="384.0" layoutY="97.0" prefHeight="25.0" prefWidth="129.0" />
             <TextField fx:id="txtF" layoutX="384.0" layoutY="130.0" prefHeight="25.0" prefWidth="129.0" />
-            <Label fx:id="lblRespuesta" layoutX="304.0" layoutY="195.0" text="El valor de z es: " textFill="WHITE">
+            <Label fx:id="lblRespuesta" layoutX="304.0" layoutY="195.0" text="El valor de z es: " textFill="WHITE" visible="false">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>

@@ -9,6 +9,7 @@ import javafx.fxml.Initializable;
 import javafx.fxml.JavaFXBuilderFactory;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
@@ -36,6 +37,7 @@ public class Principal extends Application {
     public void start(Stage escenarioPrincipal) throws Exception {
         this.escenarioPrincipal = escenarioPrincipal;
         this.escenarioPrincipal.setTitle("Rumbo Triangular");
+        escenarioPrincipal.getIcons().add(new Image("/org/proyectomatematicas/image/logoSinFondo.png"));
         menuPrincipal();
         escenarioPrincipal.setResizable(false);
         escenarioPrincipal.show();

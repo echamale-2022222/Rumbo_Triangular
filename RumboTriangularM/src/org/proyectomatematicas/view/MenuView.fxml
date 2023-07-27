@@ -210,7 +210,7 @@
          <children>
             <VBox prefHeight="210.0" prefWidth="216.0">
                <children>
-                  <Button mnemonicParsing="false" onAction="#ventanaAC" prefHeight="58.0" prefWidth="215.0" style="-fx-background-color: white; -fx-border-color: blue;" stylesheets="@../resource/Style.css" text="Longitud del arco AC" textFill="#111111">
+                  <Button alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#ventanaAC" prefHeight="58.0" prefWidth="215.0" style="-fx-background-color: white; -fx-border-color: blue;" stylesheets="@../resource/Style.css" text="Longitud del arco AC" textFill="#111111">
                      <font>
                         <Font name="Georgia Bold" size="12.0" />
                      </font>
@@ -222,7 +222,7 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button mnemonicParsing="false" onAction="#ventanaAB" prefHeight="30.0" prefWidth="215.0" style="-fx-background-color: white; -fx-border-color: blue;" stylesheets="@../resource/Style.css" text="Longitud del arco AB" textFill="#111111">
+                  <Button alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#ventanaAB" prefHeight="30.0" prefWidth="215.0" style="-fx-background-color: white; -fx-border-color: blue;" stylesheets="@../resource/Style.css" text="Longitud del arco AB" textFill="#111111">
                      <font>
                         <Font name="Georgia Bold" size="12.0" />
                      </font>
@@ -234,7 +234,7 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button mnemonicParsing="false" onAction="#ventanaAngulo" prefHeight="34.0" prefWidth="215.0" style="-fx-background-color: white; -fx-border-color: blue;" stylesheets="@../resource/Style.css" text="Calcular ángulo" textFill="#111111">
+                  <Button alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#ventanaAngulo" prefHeight="34.0" prefWidth="215.0" style="-fx-background-color: white; -fx-border-color: blue;" stylesheets="@../resource/Style.css" text="Calcular ángulo" textFill="#111111">
                      <font>
                         <Font name="Georgia Bold" size="12.0" />
                      </font>
@@ -254,7 +254,7 @@
          <children>
             <VBox prefHeight="60.0" prefWidth="216.0">
                <children>
-                  <Button mnemonicParsing="false" onAction="#ventanaSeno" prefHeight="58.0" prefWidth="215.0" style="-fx-background-color: white; -fx-border-color: blue;" stylesheets="@../resource/Style.css" text="Calcular &quot;h&quot;" textFill="#111111">
+                  <Button alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#ventanaSeno" prefHeight="58.0" prefWidth="215.0" style="-fx-background-color: white; -fx-border-color: blue;" stylesheets="@../resource/Style.css" text="Calcular &quot;h&quot;" textFill="#111111">
                      <font>
                         <Font name="Georgia Bold" size="12.0" />
                      </font>
@@ -274,7 +274,7 @@
          <children>
             <VBox prefHeight="68.0" prefWidth="216.0">
                <children>
-                  <Button mnemonicParsing="false" onAction="#ventanaCoseno" prefHeight="60.0" prefWidth="215.0" style="-fx-background-color: white; -fx-border-color: blue;" stylesheets="@../resource/Style.css" text="Calcular &quot;z&quot;" textFill="#111111">
+                  <Button alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#ventanaCoseno" prefHeight="60.0" prefWidth="215.0" style="-fx-background-color: white; -fx-border-color: blue;" stylesheets="@../resource/Style.css" text="Calcular &quot;z&quot;" textFill="#111111">
                      <font>
                         <Font name="Georgia Bold" size="12.0" />
                      </font>
