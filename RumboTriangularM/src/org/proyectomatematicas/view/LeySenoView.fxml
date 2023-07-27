@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="320.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.proyectomatematicas.controller.LeySenoController">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="299.0" prefWidth="580.0" style="-fx-background-color: blue;">
+         <children>
+            <ImageView fitHeight="208.0" fitWidth="282.0" layoutX="14.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/leySeno.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="302.0" layoutY="69.0" text="Calcule el valor &quot;h&quot; " textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="302.0" layoutY="97.0" prefHeight="27.0" prefWidth="74.0" text="Si θ =" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="303.0" layoutY="129.0" text="Si Φ =" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtA" layoutX="384.0" layoutY="97.0" prefHeight="25.0" prefWidth="116.0" />
+            <TextField fx:id="txtF" layoutX="384.0" layoutY="130.0" prefHeight="25.0" prefWidth="116.0" />
+            <Label fx:id="lblRespuesta" layoutX="303.0" layoutY="192.0" text="El valor de z es: " textFill="WHITE" visible="false">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnCalcular" layoutX="302.0" layoutY="222.0" mnemonicParsing="false" onAction="#calcular" text="Calcular" />
+            <Button fx:id="btnCalcularOtro" layoutX="442.0" layoutY="222.0" mnemonicParsing="false" onAction="#calcularOtro" text="Volver a calcular otro" />
+            <Button layoutX="14.0" layoutY="10.0" mnemonicParsing="false" onAction="#menuPrincipal" text="Regresar" />
+            <Label layoutX="304.0" layoutY="162.0" text="Si L =" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtL" layoutX="385.0" layoutY="163.0" prefHeight="25.0" prefWidth="116.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
